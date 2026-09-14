@@ -1,505 +1,224 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio website showcasing my projects and skills">
-    <title>Portfolio | Diptesh Das</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Diptesh Das builds reliable AI systems, autonomous agents, and applied ML products.">
+    <meta name="theme-color" content="#f3f0e8">
+    <title>Diptesh Das - AI systems & applied ML</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%2317212b'/%3E%3Ctext x='32' y='39' fill='%23d7f36b' font-family='Arial' font-size='22' text-anchor='middle'%3EDD%3C/text%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="container">
-            <div class="nav-brand">
-                <a href="#home">Portfolio</a>
-            </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#certifications" class="nav-link">Certifications</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-                <li><a href="Diptesh Das_Resume.pdf" target="_blank" class="nav-link resume-link">
-                        <i class="fas fa-file-pdf"></i> Resume
-                    </a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+    <div class="site-noise" aria-hidden="true"></div>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="gradient-orb orb-1"></div>
-            <div class="gradient-orb orb-2"></div>
-            <div class="gradient-orb orb-3"></div>
+    <header class="site-header" id="top">
+        <div class="shell header-inner">
+            <a class="brand" href="#top" aria-label="Diptesh Das home">
+                <span class="brand-mark">DD</span>
+                <span>Diptesh Das</span>
+            </a>
+
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+                <span></span><span></span>
+                <span class="sr-only">Open navigation</span>
+            </button>
+
+            <nav class="site-nav" id="site-menu" aria-label="Primary navigation">
+                <a href="#focus">Focus</a>
+                <a href="#work">Work</a>
+                <a href="#about">About</a>
+                <a href="#toolkit">Toolkit</a>
+                <a href="#contact">Contact</a>
+                <a class="nav-resume" href="Diptesh-Das-Resume.pdf" target="_blank" rel="noreferrer">Resume <span>↗</span></a>
+            </nav>
         </div>
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <p class="hero-greeting">Hello, I'm</p>
-                    <h1 class="hero-name">Diptesh</h1>
-                    <h2 class="hero-title">AI/ML Enthusiast and Full Stack Developer</h2>
-                    <p class="hero-description">
-                        I'm a passionate AI/ML enthusiast and full-stack developer with a strong foundation in both
-                        fields.
-                        I love building innovative solutions that blend artificial intelligence and machine learning
-                        with web development.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="Diptesh Das_Resume.pdf" target="_blank" class="btn btn-primary">
-                            <i class="fas fa-file-pdf"></i> View Resume
-                        </a>
+    </header>
+
+    <main>
+        <section class="hero section-pad" aria-labelledby="hero-title">
+            <div class="shell hero-grid">
+                <div class="hero-copy reveal">
+                    <p class="eyebrow"><span class="eyebrow-dot"></span> CS undergrad / AI systems / Vellore</p>
+                    <h1 id="hero-title">I build AI systems that hold up <em>outside the demo.</em></h1>
+                    <p class="hero-lede">I work across LLM reliability, autonomous agents, multimodal AI, computer vision, and geospatial ML - from research questions to dependable software.</p>
+                    <div class="hero-actions">
+                        <a class="button button-dark" href="#work">See selected work <span>↓</span></a>
+                        <a class="text-link" href="mailto:ddiptesh15@gmail.com">Let's talk <span>↗</span></a>
                     </div>
-                    <div class="hero-social">
-                        <a href="https://github.com/Diptesh2006" target="_blank" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/diptesh-das-63083930a/" target="_blank"
-                            aria-label="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="Diptesh Das_Resume.pdf" target="_blank" aria-label="Resume">
-                            <i class="fas fa-file-pdf"></i>
-                        </a>
-                        <a href="mailto:ddiptesh15@gmail.com" aria-label="Email">
-                            <i class="fas fa-envelope"></i>
-                        </a>
+                    <div class="hero-footnote">
+                        <span class="mono-label">CURRENTLY</span>
+                        <span>Founding AI Engineer at <strong>nRouter</strong> · Research Intern at <strong>Samsung PRISM</strong></span>
                     </div>
                 </div>
-                <div class="hero-image">
-                    <div class="image-wrapper">
-                        <img src="image.png" alt="Diptesh Das" class="profile-image">
+
+                <div class="hero-visual reveal reveal-delay">
+                    <div class="portrait-frame">
+                        <div class="portrait-topline"><span>01 / 04</span><span>BUILD · TEST · LEARN</span></div>
+                        <img src="image.png" alt="Diptesh Das in a navy suit" class="profile-image">
+                        <div class="portrait-stamp">AI<br>ENGINEER</div>
                     </div>
+                    <div class="visual-caption"><span class="caption-line"></span><span>Curious about the seams between models, tools, and the real world.</span></div>
                 </div>
             </div>
-        </div>
-        <div class="scroll-indicator">
-            <span>Scroll Down</span>
-            <i class="fas fa-chevron-down"></i>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-number">01.</span>
-                About Me
-            </h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        Computer Science undergraduate focused on artificial intelligence and machine learning, with
-                        hands-on
-                        experience in multi-agent systems, autonomous robotics, geospatial ML, and full-stack AI
-                        applications.
-                    </p>
+        <section class="signal-strip" aria-label="Selected results">
+            <div class="shell signal-grid">
+                <div class="signal-item reveal"><span class="signal-number">4k+</span><span class="signal-label">users reached by Jurident AI</span></div>
+                <div class="signal-item reveal reveal-delay"><span class="signal-number">~98%</span><span class="signal-label">aerial feature detection accuracy</span></div>
+                <div class="signal-item reveal reveal-delay-2"><span class="signal-number">~25%</span><span class="signal-label">multi-agent coordination gain</span></div>
+                <div class="signal-item reveal reveal-delay-3"><span class="signal-number">0.88</span><span class="signal-label">R² in published risk modelling</span></div>
+            </div>
+        </section>
 
-                    <h3 class="about-subtitle">Education</h3>
-                    <div class="education-item">
-                        <p><strong>Vellore Institute of Technology (VIT), Vellore</strong> <span
-                                class="year">2024–Present</span></p>
-                        <p>B.Tech in Computer Science and Engineering, CGPA: 9.39</p>
-                    </div>
-                    <div class="education-item">
-                        <p><strong>Indian Institute of Technology (IIT) Madras</strong> <span
-                                class="year">2024–Present</span></p>
-                        <p>Bachelor of Science in Data Science and Applications, CGPA: 8.84</p>
-                    </div>
-                    <div class="education-item">
-                        <p><strong>The Assembly of God Church School, Kolkata</strong></p>
-                        <p>ICSE: 98.8% (AIR 5, 2022) — ISC: 96% (AIR 16, 2024)</p>
-                    </div>
-
-                    <h3 class="about-subtitle">Experience</h3>
-                    <div class="experience-item">
-                        <p><strong>AI Researcher, Autonomous Vehicle Research Centre, VIT</strong> <span
-                                class="year">Jan 2026–Present</span></p>
-                        <p>Developing AI-driven swarm intelligence for Crazyflie drones and UAVs. Building autonomous
-                            coordination frameworks for UGV systems.</p>
-                    </div>
-                    <div class="experience-item">
-                        <p><strong>Research Intern, IIT Kharagpur</strong> <span class="year">2025</span></p>
-                        <p>Applied ML and spatio-temporal analysis on traffic accident data using Google Earth Engine.
-                            Contributed to research supporting data-driven urban safety interventions.</p>
-                    </div>
-                    <div class="experience-item">
-                        <p><strong>Team Lead, Team Prometheus (RoboCup SSL)</strong> <span
-                                class="year">2025–Present</span></p>
-                        <p>Designed multi-agent control strategies and path planning algorithms for RoboSoccer robots.
-                            Led integration and testing of vision, control, and communication modules.</p>
-                    </div>
-                    <div class="experience-item">
-                        <p><strong>Senior Core, CSI-VIT</strong> <span class="year">2025–Present</span></p>
-                        <p>Led AI-focused initiatives, workshops, and technical sessions within the student chapter.
-                            Contributed to AI/ML project development and mentoring junior members.</p>
-                    </div>
-                    <div class="experience-item">
-                        <p><strong>Research Analyst, MyPerro</strong> <span class="year">Sep 2024–Mar 2025</span></p>
-                        <p>Evaluated Total Addressable Market (TAM), Serviceable Obtainable Market (SOM), and
-                            Serviceable Available Market (SAM) to shape strategic positioning. Led customer acquisition
-                            campaigns, contributing to the startup's successful incubation at IIM Bangalore's
-                            prestigious cohort.</p>
-                    </div>
-                    <div class="experience-item">
-                        <p><strong>Financial Analyst, Collab Junction</strong> <span class="year">Sep 2024–Jan
-                                2025</span></p>
-                        <p>Analyzed and identified compelling names for startup funds, managing formal documentation and
-                            proposal submissions. Enhanced company visibility through strategic LinkedIn content
-                            creation and network growth initiatives.</p>
-                    </div>
-                    <div class="experience-item">
-                        <p><strong>Content Writer, VALSCO TECHNOLOGY</strong> <span class="year">Sep 2024–Dec
-                                2024</span></p>
-                        <p>Created engaging technical content and articles. Researched and wrote on various technology
-                            topics to enhance digital presence and audience engagement.</p>
-                    </div>
-
-                    <p>Here are a few technologies I've been working with recently:</p>
-                    <ul class="tech-list">
-                        <li>Tensorflow</li>
-                        <li>Pytorch</li>
-                        <li>JavaScript (ES6+)</li>
-                        <li>React</li>
-                        <li>Node.js</li>
-                        <li>MongoDB</li>
-                    </ul>
+        <section class="section-pad section-ruled" id="focus" aria-labelledby="focus-title">
+            <div class="shell">
+                <div class="section-heading reveal">
+                    <span class="section-index">01</span>
+                    <div><p class="eyebrow">The through-line</p><h2 id="focus-title">The work I keep coming back to.</h2></div>
                 </div>
-                <div class="about-image">
-                    <div class="image-wrapper">
-                        <img src="image.png" alt="Diptesh Das" class="profile-image">
-                    </div>
+                <div class="focus-grid">
+                    <article class="focus-card reveal">
+                        <span class="focus-mark">↗</span>
+                        <p class="mono-label">SYSTEMS</p>
+                        <h3>Make intelligence dependable.</h3>
+                        <p>Routing, evaluation, retrieval, memory, fallbacks, and the unglamorous edges that make AI useful in production.</p>
+                    </article>
+                    <article class="focus-card focus-card--accent reveal reveal-delay">
+                        <span class="focus-mark">◎</span>
+                        <p class="mono-label">AGENTS</p>
+                        <h3>Give models a world to act in.</h3>
+                        <p>Browser agents, DOM-aware representations, multi-agent coordination, and interfaces that can recover when reality changes.</p>
+                    </article>
+                    <article class="focus-card reveal reveal-delay-2">
+                        <span class="focus-mark">⌁</span>
+                        <p class="mono-label">EVIDENCE</p>
+                        <h3>Keep the loop grounded.</h3>
+                        <p>Research, visual explanations, geospatial signals, test fixtures, and outcomes that are easier to inspect than to hand-wave.</p>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-number">02.</span>
-                Skills & Technologies
-            </h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <div class="skill-icon"><i class="fas fa-code"></i></div>
-                    <h3>Programming</h3>
-                    <div class="skill-bars">
-                        <div class="skill-bar-item">
-                            <div class="skill-info"><span>Python</span><span>95%</span></div>
-                            <div class="progress-line" style="--percent: 95%;"><span></span></div>
-                        </div>
-                        <div class="skill-bar-item">
-                            <div class="skill-info"><span>Java / C++</span><span>85%</span></div>
-                            <div class="progress-line" style="--percent: 85%;"><span></span></div>
-                        </div>
-                        <div class="skill-bar-item">
-                            <div class="skill-info"><span>TypeScript / JS</span><span>90%</span></div>
-                            <div class="progress-line" style="--percent: 90%;"><span></span></div>
-                        </div>
-                        <div class="skill-bar-item">
-                            <div class="skill-info"><span>Solidity</span><span>75%</span></div>
-                            <div class="progress-line" style="--percent: 75%;"><span></span></div>
-                        </div>
-                    </div>
+        <section class="section-pad work-section" id="work" aria-labelledby="work-title">
+            <div class="shell">
+                <div class="section-heading section-heading--light reveal">
+                    <span class="section-index">02</span>
+                    <div><p class="eyebrow">Selected builds</p><h2 id="work-title">A few things I have made.</h2></div>
+                    <p class="heading-note">A mix of open-source experiments, product work, and one published research project.</p>
                 </div>
-                <div class="skill-category">
-                    <div class="skill-icon"><i class="fas fa-brain"></i></div>
-                    <h3>AI / ML</h3>
-                    <div class="skill-bars">
-                        <div class="skill-bar-item">
-                            <div class="skill-info"><span>Machine & Deep Learning</span><span>90%</span></div>
-                            <div class="progress-line" style="--percent: 90%;"><span></span></div>
+
+                <div class="project-grid">
+                    <article class="project-card project-card--wide project-card--lime reveal">
+                        <div class="project-visual turbulence-visual" aria-hidden="true">
+                            <div class="visual-window">
+                                <div class="window-bar"><span></span><span></span><span></span><b>turbulence / run 015</b></div>
+                                <div class="monitor-row"><span>provider health</span><strong class="status-good">STABLE</strong></div>
+                                <div class="chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                                <div class="monitor-row"><span>fallback coverage</span><strong>98.4%</strong></div>
+                                <div class="monitor-row"><span>fixtures passing</span><strong>15 / 15</strong></div>
+                            </div>
                         </div>
-                        <div class="skill-bar-item">
-                            <div class="skill-info"><span>Multi-Agent & Swarm</span><span>85%</span></div>
-                            <div class="progress-line" style="--percent: 85%;"><span></span></div>
+                        <div class="project-body">
+                            <p class="project-kicker">01 · AI reliability platform</p>
+                            <h3>Turbulence</h3>
+                            <p>Stress-tests LLM applications under provider outages, latency spikes, malformed responses, and routing failures - with reproducible scenarios and an SSE monitoring cockpit.</p>
+                            <div class="tag-row"><span>FastAPI</span><span>SSE</span><span>LLM APIs</span></div>
+                            <a class="project-link" href="https://github.com/Diptesh2006/turbulence" target="_blank" rel="noreferrer">View on GitHub <span>↗</span></a>
                         </div>
-                        <div class="skill-bar-item">
-                            <div class="skill-info"><span>NLP</span><span>80%</span></div>
-                            <div class="progress-line" style="--percent: 80%;"><span></span></div>
+                    </article>
+
+                    <article class="project-card project-card--wide project-card--coral reveal reveal-delay">
+                        <div class="project-body">
+                            <p class="project-kicker">02 · Multimodal GenAI</p>
+                            <h3>MindCanvas</h3>
+                            <p>Turns short journal entries into personalized comic-style visual narratives through emotion classification, story generation, structured prompting, and image synthesis.</p>
+                            <div class="tag-row"><span>FastAPI</span><span>React</span><span>GenAI</span></div>
+                            <a class="project-link" href="https://github.com/Diptesh2006/MindCanvas" target="_blank" rel="noreferrer">View on GitHub <span>↗</span></a>
                         </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <div class="skill-icon"><i class="fas fa-layer-group"></i></div>
-                    <h3>Frameworks & Tools</h3>
-                    <div class="skill-bars">
-                        <div class="skill-bar-item">
-                            <div class="skill-info"><span>TensorFlow / Keras</span><span>85%</span></div>
-                            <div class="progress-line" style="--percent: 85%;"><span></span></div>
+                        <div class="project-visual canvas-visual" aria-hidden="true">
+                            <div class="canvas-note"><span>today's entry</span><b>make room<br>for the strange</b><small>emotion / curious</small></div>
+                            <div class="canvas-spark spark-one"></div><div class="canvas-spark spark-two"></div><div class="canvas-spark spark-three"></div>
                         </div>
-                        <div class="skill-bar-item">
-                            <div class="skill-info"><span>FastAPI / Python Backends</span><span>90%</span></div>
-                            <div class="progress-line" style="--percent: 90%;"><span></span></div>
+                    </article>
+
+                    <article class="project-card project-card--small reveal">
+                        <div class="project-visual xray-visual" aria-hidden="true"><span class="scan-corner">X·Y</span><span class="scan-label">GRAD-CAM<br>ATTENTION</span><span class="scan-crosshair">+</span></div>
+                        <div class="project-body">
+                            <p class="project-kicker">03 · Explainable diagnostics</p>
+                            <h3>XyraChain</h3>
+                            <p>Chest X-ray classification with Grad-CAM attention maps and FastAPI inference services for structured diagnostic reporting.</p>
+                            <div class="tag-row"><span>Deep Learning</span><span>OpenCV</span><span>FastAPI</span></div>
+                            <a class="project-link" href="https://github.com/Diptesh2006/XyraChain" target="_blank" rel="noreferrer">View on GitHub <span>↗</span></a>
                         </div>
-                        <div class="skill-bar-item">
-                            <div class="skill-info"><span>Google Earth Engine</span><span>80%</span></div>
-                            <div class="progress-line" style="--percent: 80%;"><span></span></div>
+                    </article>
+
+                    <article class="project-card project-card--small project-card--paper reveal reveal-delay">
+                        <div class="project-visual map-visual" aria-hidden="true"><span class="map-label">KOLKATA / 2021—23</span><span class="map-dot dot-a"></span><span class="map-dot dot-b"></span><span class="map-dot dot-c"></span><span class="map-route"></span></div>
+                        <div class="project-body">
+                            <p class="project-kicker">04 · Peer-reviewed research</p>
+                            <h3>Accident risk prediction</h3>
+                            <p>A geospatial ML framework combining traffic, temporal, environmental, and satellite-derived features to forecast urban risk.</p>
+                            <div class="tag-row"><span>ML</span><span>GEE</span><span>R² ≈ 0.88</span></div>
+                            <a class="project-link" href="https://ieeexplore.ieee.org/abstract/document/11583964" target="_blank" rel="noreferrer">Read on IEEE Xplore <span>↗</span></a>
                         </div>
-                        <div class="skill-bar-item">
-                            <div class="skill-info"><span>Power BI / DataBricks</span><span>75%</span></div>
-                            <div class="progress-line" style="--percent: 75%;"><span></span></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <div class="skill-icon"><i class="fas fa-database"></i></div>
-                    <h3>Data & DevOps</h3>
-                    <div class="skill-bars">
-                        <div class="skill-bar-item">
-                            <div class="skill-info"><span>PostgreSQL / MongoDB</span><span>85%</span></div>
-                            <div class="progress-line" style="--percent: 85%;"><span></span></div>
-                        </div>
-                        <div class="skill-bar-item">
-                            <div class="skill-info"><span>Git / GitHub</span><span>95%</span></div>
-                            <div class="progress-line" style="--percent: 95%;"><span></span></div>
-                        </div>
-                        <div class="skill-bar-item">
-                            <div class="skill-info"><span>Google Colab / VS Code</span><span>90%</span></div>
-                            <div class="progress-line" style="--percent: 90%;"><span></span></div>
-                        </div>
-                    </div>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-number">03.</span>
-                Featured Projects
-            </h2>
-            <div class="projects-grid">
-                <!-- Samadhaan - Brain Service -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-microchip"></i>
-                        </div>
-                        <div class="project-overlay">
-                            <a href="#" class="project-link" title="Coming Soon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <p class="project-type">Featured Project • FastAPI Microservice</p>
-                        <h3 class="project-title">Samadhaan – Brain Service</h3>
-                        <p class="project-description">
-                            Architected and deployed a production-grade FastAPI microservice to streamline end-to-end
-                            civic grievance intake and management. Engineered automated audio transcription and
-                            complaint categorization.
-                        </p>
-                        <ul class="project-tech">
-                            <li>FastAPI</li>
-                            <li>OpenAI Whisper</li>
-                            <li>Groq LLM</li>
-                            <li>Python</li>
-                            <li>Asynchronous Processing</li>
-                        </ul>
+        <section class="section-pad timeline-section" id="about" aria-labelledby="about-title">
+            <div class="shell about-grid">
+                <div class="about-intro reveal">
+                    <div class="section-heading section-heading--stacked"><span class="section-index">03</span><div><p class="eyebrow">Beyond the repo</p><h2 id="about-title">The context behind the builds.</h2></div></div>
+                    <p class="about-lede">I am a Computer Science undergraduate at VIT and IIT Madras, drawn to problems where the model is only one part of the system.</p>
+                    <p>That has meant moving between research labs, startup products, robotics teams, and developer communities - learning to care about interfaces, constraints, and whether another person can actually use what I built.</p>
+                    <div class="education-block">
+                        <p class="mono-label">EDUCATION</p>
+                        <div class="education-row"><strong>VIT, Vellore</strong><span>2024—Present</span><small>B.Tech CSE · CGPA 9.18</small></div>
+                        <div class="education-row"><strong>IIT Madras</strong><span>2024—Present</span><small>B.S. Data Science & Applications · CGPA 8.4</small></div>
                     </div>
                 </div>
 
-                <!-- Research Paper - Highlighted -->
-                <div class="project-card research-paper reverse">
-                    <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-file-alt"></i>
-                        </div>
-                        <div class="project-overlay">
-                            <a href="InGRASS2025_DRAFT (2).pdf" class="project-link" target="_blank" title="View PDF">
-                                <i class="fas fa-file-pdf"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <p class="project-type research-badge">Research Paper • Published in InGARSS</p>
-                        <h3 class="project-title">Spatio-Temporal Accident Risk Prediction</h3>
-                        <p class="project-description">
-                            Built ML-based predictive framework using Google Earth Engine for traffic risk analysis.
-                            Generated accident risk maps (2021–2023) for urban safety planning. Published as a research
-                            paper.
-                        </p>
-                        <ul class="project-tech">
-                            <li>Google Earth Engine</li>
-                            <li>Machine Learning</li>
-                            <li>Python</li>
-                            <li>InGARSS</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- KrishiMitra -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-seedling"></i>
-                        </div>
-                        <div class="project-overlay">
-                            <a href="https://github.com/Diptesh2006/KrishiMitra" class="project-link" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <p class="project-type">Featured Project • AI Agricultural Assistant</p>
-                        <h3 class="project-title">KrishiMitra</h3>
-                        <p class="project-description">
-                            Developed AI assistant for crop planning, yield prediction, and market price forecasting.
-                            Implemented multilingual dashboards for accessible decision-making.
-                        </p>
-                        <ul class="project-tech">
-                            <li>Next.js</li>
-                            <li>FastAPI</li>
-                            <li>scikit-learn</li>
-                            <li>XGBoost</li>
-                            <li>Groq Whisper</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- CreoSynth -->
-                <div class="project-card reverse">
-                    <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-robot"></i>
-                        </div>
-                        <div class="project-overlay">
-                            <a href="https://github.com/Diptesh2006/CreoSynth" class="project-link" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <p class="project-type">Featured Project • Multi-Agent Platform</p>
-                        <h3 class="project-title">CreoSynth</h3>
-                        <p class="project-description">
-                            Developed CrewAI-based multi-agent system for automated content creation and brand
-                            compliance. Implemented workflow orchestration and real-time status tracking.
-                        </p>
-                        <ul class="project-tech">
-                            <li>CrewAI</li>
-                            <li>Python</li>
-                            <li>Multi-Agent Systems</li>
-                            <li>OpenAI API</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Perspect Platform -->
-                <div class="project-card reverse">
-                    <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-newspaper"></i>
-                        </div>
-                        <div class="project-overlay">
-                            <a href="https://github.com/Diptesh2006/NewsTimeWarp" class="project-link" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <p class="project-type">Featured Project</p>
-                        <h3 class="project-title">Perspect Platform – Real-Time News Analysis</h3>
-                        <p class="project-description">
-                            Built NLP-based platform for real-time news bias detection and sentiment analysis.
-                            Integrated 66+ live sources with asynchronous processing.
-                        </p>
-                        <ul class="project-tech">
-                            <li>React 18</li>
-                            <li>TypeScript</li>
-                            <li>Tailwind CSS</li>
-                            <li>Vite</li>
-                            <li>FastAPI</li>
-                            <li>Python 3.11+</li>
-                            <li>NewsAPI</li>
-                            <li>Custom Sentiment Analysis</li>
-                        </ul>
-                    </div>
+                <div class="timeline reveal reveal-delay">
+                    <div class="timeline-item timeline-item--current"><div class="timeline-meta"><span>2026—Now</span><i></i></div><div><h3>Founding AI Engineer · nRouter</h3><p>Enterprise AI infrastructure for model routing, governance, budget enforcement, and evaluation.</p></div></div>
+                    <div class="timeline-item timeline-item--current"><div class="timeline-meta"><span>2026—Now</span><i></i></div><div><h3>Research Intern · Samsung PRISM R&D</h3><p>Autonomous browser agents, DOM-aware retrieval, graph representations, memory, and adaptive retry loops.</p></div></div>
+                    <div class="timeline-item"><div class="timeline-meta"><span>2026</span><i></i></div><div><h3>AI Engineer · Valsco Technology</h3><p>Legal AI for 4k+ users: retrieval, query rewriting, citations, document analysis, and export-ready outputs.</p></div></div>
+                    <div class="timeline-item"><div class="timeline-meta"><span>2025</span><i></i></div><div><h3>Research Intern · IIT Kharagpur</h3><p>Spatio-temporal accident-risk modelling from official records and satellite-derived features.</p></div></div>
+                    <div class="timeline-item"><div class="timeline-meta"><span>Jan—Jul 2026</span><i></i></div><div><h3>AI Researcher · AVRC, VIT</h3><p>Swarm intelligence for Crazyflie drones, aerial computer vision, and EVGRID AI navigation workflows.</p></div></div>
+                    <div class="timeline-aside"><span class="mono-label">ALSO</span><span>Team Lead · Team Prometheus RoboSoccer</span><span>Senior Core · CSI-VIT</span></div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Certifications Section -->
-    <section id="certifications" class="certifications">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-number">04.</span>
-                Certifications
-            </h2>
-            <div class="certifications-grid">
-                <div class="cert-card">
-                    <div class="cert-icon">
-                        <i class="fas fa-award"></i>
-                    </div>
-                    <h3>Microsoft Power BI Certification</h3>
-                    <p class="cert-org">Data Analytics ETL (2024)</p>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon">
-                        <i class="fas fa-award"></i>
-                    </div>
-                    <h3>Web Development – IBM</h3>
-                    <p class="cert-org">Professional Certification (2025)</p>
+        <section class="section-pad toolkit-section section-ruled" id="toolkit" aria-labelledby="toolkit-title">
+            <div class="shell toolkit-grid">
+                <div class="section-heading reveal"><span class="section-index">04</span><div><p class="eyebrow">Working toolkit</p><h2 id="toolkit-title">Tools I reach for.</h2></div></div>
+                <div class="toolkit-content reveal reveal-delay">
+                    <div class="tool-group"><span class="mono-label">PROGRAMMING</span><div class="pill-list"><span>Python</span><span>SQL</span><span>Java</span><span>C++</span><span>TypeScript</span><span>JavaScript</span><span>Solidity</span></div></div>
+                    <div class="tool-group"><span class="mono-label">AI / ML</span><div class="pill-list"><span>LLMs</span><span>RAG</span><span>NLP</span><span>Computer Vision</span><span>Multi-Agent Systems</span><span>Swarm Intelligence</span><span>Geospatial ML</span></div></div>
+                    <div class="tool-group"><span class="mono-label">FRAMEWORKS & INFRA</span><div class="pill-list"><span>PyTorch</span><span>TensorFlow</span><span>FastAPI</span><span>OpenCV</span><span>Google Earth Engine</span><span>CrewAI</span><span>Docker</span><span>PostgreSQL</span><span>Git</span><span>Linux</span></div></div>
+                    <div class="credentials"><span class="mono-label">CREDENTIALS</span><span>Microsoft Power BI · Data Analytics & ETL · 2024</span><span>IBM · Web Development · 2025</span></div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-number">05.</span>
-                Get In Touch
-            </h2>
-            <div class="contact-content">
-                <p class="contact-intro">
-                    I'm currently looking for new opportunities, my inbox is always open.
-                    Whether you have a question or just want to say hi, I'll try my best to get back to you!
-                </p>
-                <a href="mailto:ddiptesh15@gmail.com?subject=Hello from Portfolio&body=Hi Diptesh,%0D%0A%0D%0AI came across your portfolio and would like to connect!"
-                    class="btn btn-primary btn-large" id="sayHelloBtn">Say Hello</a>
-                <div id="helloResponse" class="hello-response"></div>
-                <div class="contact-social">
-                    <a href="https://github.com/Diptesh2006" target="_blank" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/diptesh-das-63083930a/" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="mailto:ddiptesh15@gmail.com" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
+        <section class="contact-section section-pad" id="contact" aria-labelledby="contact-title">
+            <div class="shell contact-card reveal">
+                <div><p class="eyebrow">Have a hard problem?</p><h2 id="contact-title">Let's make the first<br><em>useful version.</em></h2></div>
+                <div class="contact-side"><p>I am open to thoughtful conversations about AI systems, research, and building things that are worth maintaining.</p><a class="button button-light" href="mailto:ddiptesh15@gmail.com?subject=Hello from your portfolio">Start a conversation <span>↗</span></a></div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>Designed & Built by Diptesh Das</p>
-            <p class="footer-year">© <span id="current-year"></span> All rights reserved.</p>
-        </div>
+    <footer class="site-footer">
+        <div class="shell footer-inner"><span>© <span id="current-year"></span> Diptesh Das</span><span class="footer-note">Built with HTML, CSS, and a suspicious amount of curiosity.</span><div class="footer-links"><a href="https://github.com/Diptesh2006" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/in/diptesh-das-63083930a/" target="_blank" rel="noreferrer">LinkedIn</a><a href="mailto:ddiptesh15@gmail.com">Email</a></div></div>
     </footer>
 
     <script src="script.js"></script>
