@@ -184,7 +184,7 @@ h2 { margin: 10px 0 0; font-size: clamp(2.4rem, 4vw, 4.3rem); font-weight: 600; 
 .timeline-item { grid-template-columns: 155px 1fr; gap: 44px; }
 .timeline-meta { padding-right: 30px; line-height: 1.25; text-align: right; }
 .timeline-meta i { right: 10px; }
-.timeline-item h3 small { display: block; margin-top: 5px; color: var(--muted); font-family: var(--mono); font-size: .62rem; font-weight: 400; letter-spacing: .02em; }
+.timeline-item h3 small { display: block !important; margin-top: 6px; color: var(--muted); font-family: var(--mono); font-size: .66rem; font-weight: 400; line-height: 1.35; letter-spacing: .02em; }
 .timeline-aside { margin-left: 199px; }
 @media (max-width: 900px) { .timeline::before { left: 90px; } .timeline-item { grid-template-columns: 105px 1fr; gap: 26px; } .timeline-meta { padding-right: 22px; } .timeline-meta i { right: 10px; } .timeline-aside { margin-left: 131px; } }
 @media (max-width: 680px) { .timeline::before { left: 90px; } .timeline-item { grid-template-columns: 105px 1fr; gap: 26px; } .timeline-meta { padding-right: 22px; } .timeline-meta i { right: 10px; } .timeline-aside { margin-left: 131px; } }
